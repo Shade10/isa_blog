@@ -54,4 +54,8 @@ class BlogController
     {
         return $this->twig->render('single-post.twig', $this->blogRepository->loadPostById($postId));
     }
+
+    public function showAboutPage(){
+        return 'to jest strona about';
+    }
 }

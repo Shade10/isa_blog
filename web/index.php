@@ -29,6 +29,7 @@ $app['blog.controller'] = function() use ($app) {
 // routing
 $app->get('/', 'blog.controller:showHomePage');
 $app->get('/posts', 'blog.controller:showPostsCollection');
+$app->get('/posts/about.html', 'blog.controller:showAboutPage');
 $app->get('/posts/{postId}', 'blog.controller:showSinglePost');
 
 // run app
