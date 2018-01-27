@@ -20,9 +20,7 @@
                 <h3><span class="glyphicon glyphicon-link"></span> Top Stories!</h3>
                 <ul>
                     {% for item in trending %}
-                    <a href="/posts/{{ item.id }}"> <li>{{ item.title }} </li></a>
-                    item.
-
+                    <a href="/posts/{{ item.id }}"> <li>{{ item.title }} {{ item.visited }} </li></a>
                     {% endfor %}
                 </ul>
             </div>

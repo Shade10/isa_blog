@@ -52,6 +52,7 @@ class BlogController
      */
     public function showSinglePost(string $postId) : string
     {
+        $this->blogRepository->updateVisitForPost($postId);
         return $this->twig->render('single-post.twig', $this->blogRepository->loadPostById($postId));
     }
 
